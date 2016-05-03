@@ -21,6 +21,7 @@ table
         td = link_to 'Show', zip
         td = link_to 'Edit', edit_zip_path(zip)
         td = link_to 'Destroy', zip, data: {:confirm => 'Are you sure?'}, :method => :delete
+= will_paginate @zips
 
 br
 
