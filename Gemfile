@@ -16,7 +16,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'slim-rails'
 gem 'will_paginate', '~> 3.1'
-gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug'
@@ -25,4 +24,10 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :production do
+  #use postgres on heroku
+  gem 'pg'
+  gem 'rails_12factor'
 end
